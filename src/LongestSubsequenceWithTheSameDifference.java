@@ -1,22 +1,29 @@
 import java.util.*;
 
+/**
+ * @program: LongestSubsequenceWithTheSameDifference
+ * @description: 最长子序列的长度，LeetCode 1218
+ * @author: WangTang
+ * @create: 2019-10-16 16:37
+ **/
+
 public class LongestSubsequenceWithTheSameDifference {
 
     /**
-     *
-     * @param numberSequence
-     * @return
+     * @Description 查找从前往后最长子序列的长度
+     * @param arr 数组
+     * @param difference 子序列前一个 + difference = 子序列后一个
+     * @Return int 最长递增子序列的长度
+     * @Author WangTang
+     * @Date 2019/10/16 16:46
      */
-    private static int findMaxLength(List<Integer> numberSequence, int difference) {
+    private static int findMaxLength(int[] arr, int difference) {
         int result = 1;
-        System.out.println("序列：" + numberSequence.toString() + "，差值：" + difference);
         HashSet<Integer> numberSet = new HashSet<>();
-        HashMap<Integer, HashSet> numberGroups = new HashMap<>();
-        for(int number : numberSequence) {
+        HashMap<Integer, Integer> numberLength = new HashMap<>();
+        for(int number : arr) {
             numberSet.add(number);
-            HashSet numberGroup = new HashSet();
-            numberGroup.add(number);
-            numberGroups.put(number, numberGroup);
+            numberLength.put(number, 1);
         }
 
         Iterator<Integer> iterator = numberSet.iterator();
@@ -24,21 +31,18 @@ public class LongestSubsequenceWithTheSameDifference {
             int number = iterator.next();
             int theOtherNumber = number+difference;
             if(numberSet.contains(theOtherNumber)) {
-                HashSet numberGroup1 = numberGroups.get(number);
-                HashSet numberGroup2 = numberGroups.get(theOtherNumber);
-                numberGroup1.addAll(numberGroup2);
-                numberGroups.put(number, numberGroup1);
-                numberGroups.put(theOtherNumber, numberGroup1);
-                result = Math.max(result, numberGroup1.size());
+                int newLength = numberLength.get(number) + numberLength.get(theOtherNumber);
+                numberLength.put(number, newLength);
+                numberLength.put(theOtherNumber, newLength);
+                result = Math.max(newLength, result);
             }
         }
-        System.out.println("最长等差子序列长度：" + result);
         return result;
     }
 
     public static void main(String[] args) {
-        List<Integer> numbers = Arrays.asList(3,0,-3,4,-4,7,6);
-        int difference = 3;
-        findMaxLength(numbers, difference);
+        int[] numbers = new int[]{1,5,7,8,5,3,4,2,1};
+        int difference = -2;
+        System.out.println(findMaxLength(numbers, difference));
     }
 }

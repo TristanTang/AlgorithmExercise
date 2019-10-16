@@ -1,7 +1,21 @@
-import java.util.Arrays;
 import java.util.HashSet;
 
+/**
+ * @program: AlgorithmExercise
+ * @description: 将输入的字符串中的字符转成摩尔斯码表示，然后查看字符串中有多少个不同的表示
+ * @author: WangTang
+ * @create: 2019-10-16 16:37
+ **/
+
 public class UniqueMorseCodeWords {
+
+    /**
+     * @Description 输入字符串输入，返回字符串数组转为莫尔斯码表示后的种类
+     * @param words 字符串数组
+     * @Return int 不同的莫尔斯码表示的数量
+     * @Author WangTang
+     * @Date 2019/10/16 16:40
+     */
     public static int uniqueMorseRepresentations(String[] words) {
         if(words==null || words.length==0) {
             return 0;

@@ -4,11 +4,20 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 查找出现次数最多的数字
- * @author Tristan
- */
+ * @program: FindTheMostFrequentNumber
+ * @description: 查找出现次数最多的数字
+ * @author: WangTang
+ * @create: 2019-10-16 16:37
+ **/
 public class FindTheMostFrequentNumber {
 
+    /**
+     * @Description 输入数字列表，返回出现次数最多的数字
+     * @param numberList 输入的数字列表
+     * @Return java.lang.Integer 出现次数最多的数字
+     * @Author WangTang
+     * @Date 2019/10/16 17:24
+     */
     private static Integer findTheMostFrequentNumber(List<Integer> numberList) {
         Integer result = null;
         if(numberList!=null && !numberList.isEmpty()) {
