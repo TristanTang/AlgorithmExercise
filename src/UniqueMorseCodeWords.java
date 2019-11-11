@@ -3,8 +3,10 @@ import java.util.HashSet;
 /**
  * @program: AlgorithmExercise
  * @description: 将输入的字符串中的字符转成摩尔斯码表示，然后查看字符串中有多少个不同的表示
- * @author: WangTang
+ * @author: TangWang
  * @create: 2019-10-16 16:37
+ * Runtime: 1 ms, faster than 100.00% of Java online submissions for Unique Morse Code Words.
+ * Memory Usage: 35.4 MB, less than 100.00% of Java online submissions for Unique Morse Code Words.
  **/
 
 public class UniqueMorseCodeWords {

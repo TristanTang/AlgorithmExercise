@@ -1,9 +1,9 @@
 /**
  * @ClassName DefangIpAddress
- * @Description 1108.IP 地址无效化。成绩： 1108, 0ms，用时击败 100%，内存击败 100%
+ * @Description 1108.IP 地址无效化。
  * @Author Tristan
  * @Date 2019/10/16 20:24
- * @Version 1.0
+ * 时间： 0ms，用时击败 100%，内存击败 100%
  **/
 public class DefangIpAddress {
     /**

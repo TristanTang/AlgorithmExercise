@@ -3,6 +3,8 @@
  * @description: 图片水平翻转后，每一位都求反。 LeetCode 832
  * @author: WangTang
  * @create: 2019-10-16 16:37
+ * Runtime: 0 ms, faster than 100.00% of Java online submissions for Flipping an Image.
+ * Memory Usage: 36.5 MB, less than 100.00% of Java online submissions for Flipping an Image.
  **/
 public class FlippingAnImage {
 
