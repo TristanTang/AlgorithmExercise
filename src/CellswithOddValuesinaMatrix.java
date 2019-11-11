@@ -10,6 +10,46 @@ import java.util.Set;
 
 public class CellswithOddValuesinaMatrix {
 
+    /***
+     * @Description 思路：1.遍历 indices，得到行和列。2.然后去除重复的行，去除重复的列。3.最初都是偶数，行和列交叉的，结果是偶数；行和列不交叉的，结果为奇数。
+     * @param rowCount 行数
+     * @param columnCount 列数
+     * @param indices 变换奇偶的元素
+     * @Return int 奇数数量
+     * @Author TangWang
+     * @Date 2019/11/11 09:22
+     * 性能：Runtime: 1 ms, faster than 100.00% of Java；Memory Usage: 40.8 MB, less than 100.00% of Java
+     */
+    public int method3(int rowCount, int columnCount, int[][] indices) {
+        int count = 0;
+        Set<Integer> rows = new HashSet<>();
+        Set<Integer> columns = new HashSet<>();
+        if(indices!=null) {
+            if (indices.length > 0) {
+                // 出现多次与 %2 后的效果一样
+                for (int i = 0; i < indices.length; i++) {
+                    int rowIndex = indices[i][0];
+                    int columnIndex = indices[i][1];
+                    if(rows.contains(rowIndex)) {
+                        rows.remove(rowIndex);
+                    } else {
+                        rows.add(rowIndex);
+                    }
+                    if(columns.contains(columnIndex)) {
+                        columns.remove(columnIndex);
+                    } else {
+                        columns.add(columnIndex);
+                    }
+                }
+                // 先计算所有的变奇数的次数
+                count += rows.size() * columnCount + columns.size() * rowCount;
+                // 行与列相交的，变成偶数，需要减去；因为重叠的元素相当于两次变奇偶性的操作，所以需要*2；
+                count -= rows.size() * columns.size() * 2;
+            }
+        }
+        return count;
+    }
+
     /**
      * 使用 set 来存储集合元素，这样就不用遍历了
      * @param rowCount 矩阵行数
@@ -120,6 +160,6 @@ public class CellswithOddValuesinaMatrix {
         int m = 2;
         int[][] indices = new int[][]{{1,1},{0,0}};
         CellswithOddValuesinaMatrix cellswithOddValuesinaMatrix = new CellswithOddValuesinaMatrix();
-        System.out.println(cellswithOddValuesinaMatrix.method1(n, m, indices));
+        System.out.println(cellswithOddValuesinaMatrix.method3(n, m, indices));
     }
 }
