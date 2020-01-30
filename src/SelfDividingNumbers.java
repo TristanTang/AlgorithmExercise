@@ -9,7 +9,7 @@ import java.util.List;
  * Runtime: 1 ms, faster than 100.00% of Java online submissions for Self Dividing Numbers.
  * Memory Usage: 34 MB, less than 30.00% of Java online submissions for Self Dividing Numbers.
  **/
-
+@SuppressWarnings("all")
 public class SelfDividingNumbers {
 
     public List<Integer> selfDividingNumbers(int left, int right) {

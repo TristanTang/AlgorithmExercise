@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
@@ -10,7 +9,7 @@ import java.util.Set;
  * @create: 2019-11-11 16:16
  * TODO：当前方法没有做到速度和内存都超越 100%
  **/
-
+@SuppressWarnings("all")
 public class UniqueNumberofOccurrences {
 
     /**

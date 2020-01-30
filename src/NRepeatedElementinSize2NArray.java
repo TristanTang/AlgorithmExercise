@@ -6,7 +6,7 @@
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for N-Repeated Element in Size 2N Array.
  * Memory Usage: 39.2 MB, less than 100.00% of Java online submissions for N-Repeated Element in Size 2N Array.
  **/
-
+@SuppressWarnings("all")
 public class NRepeatedElementinSize2NArray {
 
     /**

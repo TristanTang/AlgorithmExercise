@@ -4,7 +4,7 @@
  * @author: TangWang
  * @create: 2020-01-01 21:38
  **/
-
+@SuppressWarnings("all")
 public class FindNumbersWithEvenNumberOfDigits {
 
     /**

@@ -6,7 +6,7 @@
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Split a String in Balanced Strings.
  * Memory Usage: 34.2 MB, less than 100.00% of Java online submissions for Split a String in Balanced Strings.
  **/
-
+@SuppressWarnings("all")
 public class SplitaStringinBalancedSubstrings {
 
     /***

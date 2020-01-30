@@ -6,7 +6,7 @@
  * Runtime: 4 ms, faster than 98.15% of Java online submissions for Robot Return to Origin.
  * Memory Usage: 38 MB, less than 98.65% of Java online submissions for Robot Return to Origin.
  **/
-
+@SuppressWarnings("all")
 public class RobotReturn2Origin {
     /**
      * @description 思路 1：U 和 D 是一个维度(U是 -1，D 是 1)；L 和 R 是一个维度(L 是 -1，R 是 1)

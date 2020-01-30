@@ -5,6 +5,7 @@
  * @Date 2019/10/16 20:24
  * 时间： 0ms，用时击败 100%，内存击败 100%
  **/
+@SuppressWarnings("all")
 public class DefangIpAddress {
     /**
      * @Description 将输入字符串中 "." 替换为 "[.]"

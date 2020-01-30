@@ -4,7 +4,7 @@
  * @author: TangWang
  * @create: 2020-01-10 13:21
  **/
-
+@SuppressWarnings("all")
 public class SubstractTheProductAndSumOfDigitsOfAnInteger {
 
     /***

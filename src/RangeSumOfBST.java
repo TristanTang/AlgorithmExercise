@@ -6,6 +6,7 @@
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Range Sum of BST.
  * Memory Usage: 45.6 MB, less than 97.67% of Java online submissions for Range Sum of BST.
  **/
+@SuppressWarnings("all")
 public class RangeSumOfBST {
 
     /***

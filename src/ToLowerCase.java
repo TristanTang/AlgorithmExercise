@@ -4,6 +4,7 @@
  * @author: TangWang
  * @create: 2019-11-11 11:06
  **/
+@SuppressWarnings("all")
 public class ToLowerCase {
 
     /***

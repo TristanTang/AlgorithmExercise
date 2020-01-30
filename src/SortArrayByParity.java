@@ -6,7 +6,7 @@
  * Runtime: 1 ms, faster than 100.00% of Java online submissions for Sort Array By Parity.
  * Memory Usage: 39.9 MB, less than 95.14% of Java online submissions for Sort Array By Parity.
  **/
-
+@SuppressWarnings("all")
 public class SortArrayByParity {
     /**
      * @description 将数组中偶数都移到奇数前面

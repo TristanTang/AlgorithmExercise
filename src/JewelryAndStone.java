@@ -9,6 +9,7 @@ import java.util.HashSet;
  * @Date 2019/10/16 19:48
  * @Version 1.0
  **/
+@SuppressWarnings("all")
 public class JewelryAndStone {
 
     /**

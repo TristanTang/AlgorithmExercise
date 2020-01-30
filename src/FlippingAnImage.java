@@ -6,6 +6,7 @@
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Flipping an Image.
  * Memory Usage: 36.5 MB, less than 100.00% of Java online submissions for Flipping an Image.
  **/
+@SuppressWarnings("all")
 public class FlippingAnImage {
 
     /**

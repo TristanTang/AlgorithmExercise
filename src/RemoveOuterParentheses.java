@@ -7,6 +7,7 @@
  * Runtime: 2 ms, faster than 98.30% of Java online submissions for Remove Outermost Parentheses.
  * Memory Usage: 37.2 MB, less than 93.51% of Java online submissions for Remove Outermost Parentheses.
  **/
+@SuppressWarnings("all")
 public class RemoveOuterParentheses {
 
     public String removeOuterParentheses(String S) {

@@ -6,7 +6,7 @@ import java.util.*;
  * @author: WangTang
  * @create: 2019-10-16 16:37
  **/
-
+@SuppressWarnings("all")
 public class LongestSubsequenceWithTheSameDifference {
 
     /**

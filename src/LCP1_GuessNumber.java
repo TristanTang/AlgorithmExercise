@@ -5,6 +5,7 @@
  * @Date 2019/10/16 19:41
  * @Version 1.0
  **/
+@SuppressWarnings("all")
 public class LCP1_GuessNumber {
     public int game(int[] guess, int[] answer) {
         int result = 0;

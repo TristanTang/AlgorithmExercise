@@ -3,6 +3,7 @@
  * 字符串压缩：当输入连续相同的字符时，通过“次数+字符”的形式进行压缩，例如输入“abcaaabbc”，返回“abc3a2bc”，如果输入“aaaaaa”，返回“6a”，如果输入“abcabc”，则返回“abcabc”；
  * @author Tristan
  */
+@SuppressWarnings("all")
 public class CompressString {
 
     /**

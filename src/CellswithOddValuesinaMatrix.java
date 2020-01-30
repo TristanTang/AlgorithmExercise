@@ -7,7 +7,7 @@ import java.util.Set;
  * @author: TangWang
  * @create: 2019-11-11 00:40
  **/
-
+@SuppressWarnings("all")
 public class CellswithOddValuesinaMatrix {
 
     /***
